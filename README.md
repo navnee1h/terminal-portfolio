@@ -3,9 +3,6 @@
 Welcome to my terminal-inspired portfolio website! This project is a fully interactive, terminal-style personal site built using modern web technologies. It mimics the experience of using a real command-line interface (CLI) directly in the browser.
 
 ---
-## Note
-The latest code and development versions are available on the **`gh-branch`** branch.
-Please switch to the [gh-branch](https://github.com/navnee1h/terminal-portfolio/tree/gh-pages) branch to explore the complete source code and updates.
 
 ## 🚀 Features
 
@@ -16,6 +13,10 @@ Please switch to the [gh-branch](https://github.com/navnee1h/terminal-portfolio/
   - `contact` — How to get in touch
   - `help` — List all available commands
   - `clear` — Clear the terminal screen
+  - `skills` — View categorized technical skills
+  - `themes` — Switch between 7 custom terminal themes
+  - `shortcuts` — View built-in keyboard hotkeys
+  - `time` — Show current date, time, and timezone
 - ASCII art welcome screen
 - Responsive and keyboard-friendly design
 - Built with React and TypeScript
@@ -27,7 +28,7 @@ Please switch to the [gh-branch](https://github.com/navnee1h/terminal-portfolio/
 - **React** + **TypeScript** for UI and logic
 - **Styled-components** for styling
 - Custom command parser and terminal emulation
-- Deployment-ready for platforms like Vercel or Netlify
+- Deployment-ready for platforms like GitHub Pages, Vercel, or Netlify
 
 ---
 
@@ -35,9 +36,9 @@ Please switch to the [gh-branch](https://github.com/navnee1h/terminal-portfolio/
 
 ```
 src/
-├── components/
+├── components/          # Custom components
 │   ├── commands/          # Command components (About, Help, Projects, etc.)
-│   ├── Terminal.tsx       # Terminal UI and input handling
+│   ├── Terminal.tsx       # Terminal UI, keyboard events and input handling
 │   └── Welcome.tsx        # Welcome screen with ASCII art
 ├── styles/                # Styled-components and global styles
 ├── App.tsx                # Root app component
@@ -48,41 +49,45 @@ src/
 
 ## 📦 Getting Started
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/navnee1h/terminal-portfolio.git
-   cd terminal-portfolio
-   ```
+### Prerequisites
+Make sure you have **Node.js** (version 18+ recommended) and **npm** installed on your system.
 
-2. Install dependencies:
+### Installation
+1. Install dependencies inside the project folder:
    ```bash
    npm install
    ```
 
-3. Start the development server:
+2. Start the local Vite development server:
    ```bash
    npm run dev
    ```
 
-4. Open your browser at `http://localhost:3000` (or the port shown).
+3. Open your browser at **`http://localhost:5173/terminal-portfolio/`** (or the port shown by Vite).
+
+---
+
+## 🌐 Deploying to GitHub Pages (Automated Setup)
+
+This repository is configured with an automated CI/CD pipeline inside `.github/workflows/deploy.yml` to deploy seamlessly to GitHub Pages.
+
+To launch your site live:
+1. Commit and push the files to your repository on the `main` branch:
+   ```bash
+   git add .
+   git commit -m "Configure modern React Vite setup"
+   git push origin main
+   ```
+2. Go to your repository settings on GitHub.
+3. Click on **Pages** in the left sidebar.
+4. Under **Build and deployment** -> **Source**, select **GitHub Actions** from the dropdown menu.
+5. The GitHub Action will automatically run, build, and deploy your terminal portfolio to your public GitHub pages domain!
 
 ---
 
 ## 🌐 Live Demo
 
 [click this link](https://navnee1h.github.io/terminal-portfolio/)
-
----
-
-## 🛠️ Commands List
-
-| Command    | Description                     |
-|------------|---------------------------------|
-| `about`    | Display info about me            |
-| `projects` | Show my projects and work       |
-| `contact`  | Show my contact information     |
-| `help`     | List all available commands     |
-| `clear`    | Clear the terminal screen       |
 
 ---
 
