@@ -19,15 +19,15 @@ const About: React.FC = () => {
   return (
     <Container data-testid="about">
       <p>
-        Hi, my name is <BoldSpan>Navaneeth M.S</BoldSpan>!
+        Hi, my name is <BoldSpan>Navaneeth M S</BoldSpan>
       </p>
       <p>
-        Doing my degree in <BoldSpan>Cyber Forensics</BoldSpan>, passionate about learning more about computers and cybersecurity.
+        Cyber security researcher and <BoldSpan>Product security</BoldSpan> intern at HighRadius.
       </p>
       <p>
-        I am a self-learner, building real-world skills and making money from what I know so far. I like meeting knowledgeable people, growing my network, and learning more about this field.
+        Starting with no prior bug bounty experience, I reported vulnerabilities and received bounty from Google and Microsoft within two months.
       </p>
-      <p>I’m here to learn, build, and grow!</p>
+      <p>Always learning, building and growing.</p>
     </Container>
   );
 };

@@ -27,15 +27,18 @@ const Item = styled.div`
 const Education: React.FC = () => {
   const educationList = [
     {
-      title: "B.Sc in Cyber Forensics",
-      desc: "MG University | Expected 2026"
+      title: "Product Security Intern",
+      desc: "HighRadius | 2026 April - Present"
     },
     {
-      title: "Self-Learner in Cybersecurity",
-      desc: "CTFs, open-source projects, and independent research"
+      title: "B.Sc Cyber Forensics",
+      desc: "MG University | 2023 - 2026"
+    },
+    {
+      title: "Continuous Learning",
+      desc: "CTFs, Bug bounty, security projects, and independent research"
     }
   ];
-
   return (
     <Container data-testid="education">
       <Header>Here is my education background!</Header>

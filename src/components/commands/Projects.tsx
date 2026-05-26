@@ -47,46 +47,59 @@ export interface Project {
 export const projectsList: Project[] = [
   {
     id: 1,
-    title: "passLord",
-    desc: "A Python tool that generates target-based password wordlists for password cracking and cryptographic analysis.",
+    title: "PassLord",
+    desc: "Profile-based password wordlist generator for ethical hacking, security testing, and password auditing. Generates millions of intelligent password combinations.",
     url: "https://github.com/navnee1h/passlord"
   },
+
   {
     id: 2,
-    title: "Security Audit App",
-    desc: "A Flask web app that audits user password strength and provides a data-rich admin dashboard for security analytics.",
-    url: "https://github.com/navnee1h/Security-audit-app"
+    title: "ADRoute",
+    desc: "Active Directory attack path visualization tool designed to support security assessments and attack path analysis.",
+    url: "https://github.com/navnee1h/ADRoute"
   },
+
   {
     id: 3,
-    title: "Instagram Phish",
-    desc: "A cloned Instagram login page for phishing demonstration and security awareness. For educational use only.",
-    url: "https://github.com/navnee1h/instaphish-awareness-demonstration"
+    title: "ClickJacking ",
+    desc: "Security awareness project demonstrating Clickjacking attacks and browser-based UI redressing techniques for educational purposes.",
+    url: "https://github.com/navnee1h/clickjacking"
   },
+
   {
     id: 4,
-    title: "Personal Portfolio (gui)",
-    desc: "Personal portfolio website of Navaneeth M S",
-    url: "https://navnee1h.github.io/"
+    title: "Enterprise Password Security & Audit System",
+    desc: "Password auditing platform helping organizations identify weak and reused credentials to strengthen password security posture.",
+    url: "https://github.com/navnee1h/Security-audit-app"
   },
+
   {
     id: 5,
-    title: "File Upload Server",
-    desc: "A lightweight Python-based file upload server with upload speed indication, running on localhost.",
-    url: "https://github.com/navnee1h/Python-file-upload-server"
+    title: "Reverse IP Lookup",
+    desc: "OSINT utility that identifies websites hosted on the same server IP for reconnaissance and infrastructure mapping.",
+    url: "https://github.com/navnee1h/reverse_ip"
   },
+
   {
     id: 6,
     title: "ShutdownTrigger",
-    desc: "Triggers system shutdown on a Linux server using a webhook — useful for remote control scenarios.",
+    desc: "Webhook-driven Linux automation utility enabling remote shutdown execution for administration workflows.",
     url: "https://github.com/navnee1h/ShutdownTrigger"
   },
+
   {
     id: 7,
-    title: "Reverse IP Lookup",
-    desc: "Identifies all websites hosted on the same server IP — helpful for OSINT and reconnaissance.",
-    url: "https://github.com/navnee1h/reverse_ip"
-  }
+    title: "Python File Upload Server",
+    desc: "Lightweight localhost file upload server with transfer monitoring and upload visibility features.",
+    url: "https://github.com/navnee1h/Python-file-upload-server"
+  },
+
+  {
+    id: 8,
+    title: "Terminal Portfolio",
+    desc: "Interactive terminal-inspired portfolio built using React and TypeScript with command-based navigation.",
+    url: "https://github.com/navnee1h/terminal-portfolio"
+  },
 ];
 
 interface ProjectsProps {
@@ -128,7 +141,7 @@ const Projects: React.FC<ProjectsProps> = ({ args }) => {
   return (
     <Container data-testid="projects">
       <Intro>
-        “Talk is cheap. Show me the code”? I got you. <br />
+        Talk is cheap. Show me the code? I got you. <br />
         Here are some of my projects you shouldn't miss:
       </Intro>
       {projectsList.map(({ id, title, desc }) => (

@@ -100,7 +100,7 @@ const Welcome: React.FC<WelcomeProps> = ({ onHelpClick }) => {
   |_| \\_|\\__,_| \\_/ \\__,_|_| |_|\\___|\\___|\\__|_| |_|
 `}
           </PreText>
-          <div>Hi! I'm Navaneeth. Nice to meet you too.</div>
+          <div>Hi I'm Navaneeth. I find bugs, build things, and spending unhealthy amounts of time with computers.</div>
           <Separator>----</Separator>
           <div>
             This is my main portfolio site:{" "}
@@ -108,7 +108,7 @@ const Welcome: React.FC<WelcomeProps> = ({ onHelpClick }) => {
               link
             </GUILink>
           </div>
-          <Separator>----</Separator>
+
           <div>
             For a list of available commands, type{" "}
             <InteractiveHelp onClick={onHelpClick}>help</InteractiveHelp>

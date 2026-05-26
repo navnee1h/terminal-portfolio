@@ -51,7 +51,7 @@ const Skills: React.FC = () => {
       "C++",
       "SQL",
       "HTML/CSS",
-      "Networking",
+      "Secure code review",
       "Penetration testing & Exploitation",
       "Cryptography",
       "Cyber Laws & Compliance",
@@ -61,10 +61,7 @@ const Skills: React.FC = () => {
       "Wireshark",
       "Nmap",
       "Burpsuite",
-      "Metasploit",
-      "Cellebrite",
       "Prompt Engineering",
-      "GraphQL"
     ],
     "Devops & Platforms": [
       "Linux",
